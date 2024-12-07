@@ -17,7 +17,7 @@ MXMXAXMASX`)).to.equal(18);
   });
 });
 describe('Day 04: Part 2', () => {
-  it('Should', () => {
+  it('Should count number of X-MAS occurrences', () => {
     expect(part2(`MMMSXXMASM
 MSAMXMSMSA
 AMXSXMAAMM
