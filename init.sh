@@ -9,13 +9,17 @@ fi
 if [ ! -f $d/part1.js ]; then
   touch $d/part1.js
   echo Created part1.js
-  echo "module.exports = input => {}" >> $d/part1.js
+  echo "module.exports = input => {
+  let lines = input.split(/\r?\n/);
+}" >> $d/part1.js
 fi
 
 if [ ! -f $d/part2.js ]; then
   touch $d/part2.js
   echo Created part2.js
-  echo "module.exports = input => {}" >> $d/part2.js
+  echo "module.exports = input => {
+  let lines = input.split(/\r?\n/);
+}" >> $d/part2.js
 fi
 
 if [ ! -f $d/test.js ]; then
@@ -25,8 +29,16 @@ if [ ! -f $d/test.js ]; then
 const part1 = require('./part1');
 const part2 = require('./part2');
 
-describe('Day $1: Part 1', () => {});
-describe('Day $1: Part 2', () => {});" >> $d/test.js
+describe('Day $1: Part 1', () => {
+  it('Should', () => {
+    expect(part1()).to.equal();
+  });
+});
+describe('Day $1: Part 2', () => {
+  it('Should', () => {
+    expect(part2()).to.equal();
+  });
+});" >> $d/test.js
 fi
 
 if [ ! -f $d/input.txt ]; then
