@@ -3,7 +3,7 @@ const part1 = require('./part1');
 const part2 = require('./part2');
 
 describe('Day 10: Part 1', () => {
-  it('Should', () => {
+  it('Should calculate sum of trailhead scores', () => {
     expect(part1(`89010123
 78121874
 87430965
@@ -15,7 +15,7 @@ describe('Day 10: Part 1', () => {
   });
 });
 describe('Day 10: Part 2', () => {
-  it('Should', () => {
+  it('Should calculate sum of trailhead scores using ratings', () => {
     expect(part2(`89010123
 78121874
 87430965
