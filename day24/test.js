@@ -53,8 +53,3 @@ tgd XOR rvg -> z12
 tnw OR pbm -> gnj`)).to.equal(2024);
   });
 });
-describe('Day 24: Part 2', () => {
-  it('Should', () => {
-    // expect(part2()).to.equal();
-  });
-});
